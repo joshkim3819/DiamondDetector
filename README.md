@@ -1,6 +1,7 @@
 # DiamondDetector
 
 Purpose:  Create a model that can determine the authenticity of a diamond given the validation images with 80% accuracy
+
 Inspiration: Papers on YOLOv5 and EfficientNetB3
 
 WARNING: Did not succeed due to 3 main reasons
@@ -12,10 +13,9 @@ WARNING: Did not succeed due to 3 main reasons
 # Model Architecture
 
 The model is composed of three main steps
-  1. **Detection**: Utilized Pytorch's YOLOv5 to identify and label diamonds within provided images
-    Note: Images would ideally have only diamonds, but could include diamonds on rings or necklaces
-  2. **Classification**: Utilize Tensorflow's EfficientNetB3 to finetune model to assist in categorizing real/fake diamonds
-  3. **Evaluation**: Score of how well the model performed (correct/total sample size)
-  4. **Data**:
-       a. Training Data: Includes Real and Fake
-       b. Validation Data: Includes Real and Fake 
+  1. **Detection**: Utilized Pytorch's YOLOv5 to identify and label diamonds within provided images (Images would ideally have only diamonds, but could include diamonds on rings or necklaces)
+  3. **Classification**: Utilize Tensorflow's EfficientNetB3 to finetune model to assist in categorizing real/fake diamonds
+  4. **Evaluation**: Score of how well the model performed (correct/total sample size)
+  5. **Data**:
+    a. Training Data: Includes Real and Fake
+    b. Validation Data: Includes Real and Fake 
