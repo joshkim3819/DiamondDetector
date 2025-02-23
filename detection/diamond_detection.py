@@ -13,7 +13,7 @@ def detect_diamond(image_path, conf_threshold=0.5, device=None):
         model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
         model.to(device).eval()
     except Exception as e:
-        raise RuntimeError(f"Failed to load YOLOv5 model: {e}")  # Handle loading errors (e.g., no internet)
+        raise RuntimeError(f"Failed to load YOLOv5 model: {e}")
 
     # Load image from the provided path using OpenCV in BGR format
     # Changing from BGR to RGB since YOLOv5 works with RGB
