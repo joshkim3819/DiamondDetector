@@ -10,7 +10,7 @@ WARNING: Did not succeed due to 3 main reasons
   3. **Variable Lighting** - Diamond's sparkles vary heavily on how and what kind of light is being used
 
   
-# Model Architecture
+# Model Architecture (Script found in "Detection")
 
 The model is composed of three main steps
   1. **Detection**: Utilized Pytorch's YOLOv5 to identify and label diamonds within provided images (Images would ideally have only diamonds, but could include diamonds on rings or necklaces)
